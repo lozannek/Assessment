@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assessment</title>
+</head>
+<body>
+    <h1>Add Two Numbers</h1>
+
+<p>
+    Enter first number:
+    <input type="number" id="num1" name="number1">
+    <br/>
+    Enter second number:
+    <input type="number" id="num2" name="number2">
+</p>
+    <p id="Total"></p>
+    Click the button to calculate the total.
+    <button onclick="myFunction()">Total</button>
+
+<script>
+    function myFunction() {
+        var y = document.getElementById("num1").value;
+        var z = document.getElementById("num2").value;
+        var x = parseInt(y) + parseInt(z);
+        document.getElementById("Total").innerHTML = x;
+
+    }
+</script>
+
+</body>
+</html>
